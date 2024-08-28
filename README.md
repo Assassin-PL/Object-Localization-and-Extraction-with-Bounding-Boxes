@@ -44,10 +44,11 @@ The project is organized as follows:
    image_handler = Obraz()
    image_handler.load_images('original_image.jpg', 'modified_image.jpg')
    
-2.Find Changes and Draw Bounding Boxes: Detect the changes between the images and draw bounding boxes around the detected differences.
-
-     bounding_boxes = image_handler.find_changes()
-     image_handler.save_modified_image_with_bboxes('output_with_bboxes.png', bounding_boxes)
+2. **Find Changes and Draw Bounding Boxes** :
+Detect the changes between the images and draw bounding boxes around the detected differences.
+    ```python
+      bounding_boxes = image_handler.find_changes()
+      image_handler.save_modified_image_with_bboxes('output_with_bboxes.png', bounding_boxes)
 
 3. Save the Image with Transparent Background: Extract the object within the bounding box and save the result with a transparent background.
     ```python
