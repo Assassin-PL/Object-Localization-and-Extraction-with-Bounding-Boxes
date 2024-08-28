@@ -15,10 +15,9 @@ The primary goal of this project is to demonstrate the following tasks:
 
 The project is organized as follows:
 
-- **Klasa.py**: Contains the `Obraz` class, which provides methods for loading images, detecting changes between two images, and saving images with bounding boxes or with the background removed.
+- **Klasa.py**: Contains the `Obraz` class, which provides methods for loading images, detecting changes between two images, and saving images with bounding boxes or with the background removed. The method for detecting bounding boxes involves applying masks to the image using the OpenCV library, which helps identify regions of difference between the original image and a modified version (e.g., where a cola can has been added).
 - **KlasaTest.py**: Similar to `Klasa.py`, but may contain variations or testing versions of the methods.
 - **main.py**: The main script that demonstrates the functionality of the `Obraz` class, including loading images, detecting changes, and saving the processed images.
-
 ## Requirements
 
 - Python 3.x
